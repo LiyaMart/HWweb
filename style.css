@@ -1,0 +1,1046 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}  
+
+.check{
+    position: relative;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    min-height: 75px;
+    flex-shrink: 0;
+    gap: 60vw;
+    background: #222;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_left{
+    display: inline-flex;
+    gap: 4vw;
+    align-items: center;
+}
+
+.header_nav{
+    display: inline-flex;
+    max-height: 29px;
+    gap: 35px;
+    align-items: center;
+}
+
+.header_menu{
+    max-width: 30vw;
+}
+
+.header_search{
+    max-width: 30vw;
+}
+
+.header_checkbox{
+    position: absolute;
+    visibility: hidden;
+    left: -9999999999px;
+}
+  
+.header_checkbox:checked~.menu {
+    right: 0;
+}
+
+.menu{
+    position: absolute;
+    top: 75px;
+    width: 232px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 2vw;
+    box-sizing: border-box;
+    flex-direction: column;
+    z-index: 1;
+    transition: right 0.6s;
+    right: -232px;
+}
+
+.menu_heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+
+  .menu_box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    margin-top: 1vw;
+  }
+
+  .menu_title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+  }
+
+  .menu_list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    padding-left: 2vw;
+  }
+  
+  
+  .menu_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+  }
+  
+  .menu_link:hover {
+    color: #F16D7F;
+  }
+   
+  .top{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background: #F1E4E6;
+
+}
+
+.top_imaging{
+    width: 50vw;
+}
+
+.top_content{
+    display: flex;
+    width: 50vw;
+    max-height: 650px;
+    align-items: flex-start;
+
+}
+
+.top_info{
+    gap: 1vw;
+    padding-left: 3vw;
+    border-left: 12px solid #F16D7F;
+    font-style: normal;
+    line-height: normal;
+    color: #222;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.text_content{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.pink{
+    color: #F16D7F;
+}
+
+.cards{
+    display: grid;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    width: 80vw;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vw;
+    align-self: center;
+    justify-items: center;
+}
+
+.women{
+    display: flex;
+    flex-direction: column;
+    background-image: url('img/si1.jpg');
+    background-size: 100% 100%;
+    height: 17vw;
+    width: 24vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.man{
+    display: flex;
+    flex-direction: column;
+    height: 17vw;
+    width: 24vw;
+    align-items: center;
+    justify-content: center;
+    background-image: url('img/si2.jpg');
+    background-size: 100% 100%;
+}
+
+.kids{
+    background-image: url('img/si3.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    height: 17vw;
+    width: 24vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.accesories{
+    background-image: url('img/sibig.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 12.6vw;
+    align-items: center;
+    justify-content: center;
+    grid-area: 2/1/2/4;
+}
+
+h4{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+h3{
+    color: #F16D7F;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.catalog{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    gap: 5vw;
+    align-self: center;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog_name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+h2{
+    color: #222;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p{
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.catalog_description{
+    color: #9F9F9F;
+}
+
+.catalog_items{
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+    gap: 3vw;
+}
+
+h5{
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.item{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 28vw;
+    background: #F8F8F8;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imaging_catalog{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 28vw;
+    height: 32.5vw;
+    background: #F7E4E2;
+}
+
+.imaging_item_group{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.imaging_item{
+    height: 32.5vw;
+}
+
+.item_add{
+    z-index: 3;
+    position: absolute;
+    border: 1px solid #fff;
+    min-width: 139px;
+    min-height: 44px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: none;
+    color: #FFFFFF;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.item:hover .imaging_item_group{
+    filter: brightness(0.5);
+    box-shadow: 0 0 5px #fff;
+}
+
+
+.item:hover .item_add{
+    display: inline-flex;
+  }
+  
+.item_add:hover{
+    box-shadow: 0 0 5px #fff;
+}
+
+.item_add:hover svg path{
+    fill: #F16D7F;
+}
+
+.items_discription{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 24px 16px;
+    height: 30%;
+}
+
+
+.items_text{
+    color: #5D5D5D;
+}
+
+.price{
+    color: #F16D7F;
+    font-size: 16px;
+}
+
+.button_items{
+    background: #FFF;
+    color: #F26376;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: solid 2px #F26376;
+    width: 212px;
+    height: 48px;
+    flex-shrink: 0;
+    transition: 0.4s;
+}
+
+.button_items:hover{
+    color: #FFF;
+    background: #F26376;
+}
+
+.information{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #000;
+    max-width: 100vw;
+    height: max-content;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    gap: 4vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+.information_item{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    width: 24vw;
+    height: max-content;
+}
+
+.information_imaging{
+    width: 44.99px;
+    height: 31.93px;
+
+}
+
+h6{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.information_text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FBFBFB;
+    opacity: 0.7;
+
+}
+
+.registration{
+    position: relative;
+    z-index: 1;
+    height: max-content;
+    max-width: 100vw;
+    overflow: hidden;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 12vw;
+    padding-right: 12vw;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    gap: 10vw;
+
+}
+
+.registration:before{
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    content: "";
+    background: url('img/photo subscribe.svg');
+    background-size: cover;
+    opacity: 0.9;
+}
+
+
+.passage{
+    width: 28vw;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.passage_imaging{
+    width: 96px;
+    height: 96px;
+}
+
+.passage_text{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #222224;
+
+}
+
+.form_registration{
+    width: 38vw;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+}
+
+.text_form_registration{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.title_registration{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #222224;
+    font-weight: bold;
+}
+
+
+
+.form_info{
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #222224;
+}
+
+form{
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    height: 49px;
+}
+
+.registration_button{
+    border: 1px solid #F16D7F;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    background-color: #F16D7F;
+    width: 100px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.registration_input{
+    border: 1px solid #E1E1E1;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+    width: 256px;
+    text-align: left;
+    color: #222224;
+    background: #E1E1E1;
+    padding-left: 20px;
+}
+
+footer{
+    max-width: 100vw;
+    height: 79px;
+    background: #222224;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text_brand_date{
+    width: 50vw;
+    padding-left: 10vw;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FBFBFB;
+}
+
+.massenger_brand_date{
+    display: inline-flex;
+    width: 50vw;
+    gap: 0.5vw;
+    padding-right: 10vw;
+    justify-content: end;
+
+}
+
+.massengers_logo{
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    transition: 0.6s;
+}
+
+.massengers_logo:hover{
+    background: #FF6A6A;
+}
+
+.massengers_logo:hover path{
+    fill: #FFFFFF;
+}
+
+@media(max-width: 1024px) and
+(min-width: 600px){
+
+    .header{
+        min-height: 60px;
+        gap: 50vw;
+    }
+    
+    .menu{
+        top: 60px;
+        width: 180px;
+        right: -180px;
+    }
+    
+    .menu_heading {
+        font-size: 10px;
+        line-height: 5px;
+      }
+    
+      .menu_title {
+        font-size: 10px;
+        line-height: 5px;
+      }
+    
+      .menu_list {
+        gap: 0;
+        padding-left: 2vw;
+      }
+      
+      
+      .menu_link {
+        font-size: 10px;
+        line-height: 5px;
+      }
+        c
+    h1{
+        font-size: 44px;
+    }
+    
+    .text_content{
+        font-size: 24px;
+    }
+    
+    .cards{
+        width: 90vw;
+        gap: 3vw;
+    }
+
+    .women{
+        height: 20vw;
+        width: 28vw;
+    }
+    
+    .man{
+        height: 20vw;
+        width: 28vw;
+    }
+    
+    .kids{
+        height: 20vw;
+        width: 28vw;
+    }
+    
+    .accesories{
+        width: 90vw;
+        height: 14vw;
+    }
+    
+    .catalog{
+        width: 90vw;
+    }
+
+     .catalog_items{
+        grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .item{
+        width: 42vw;
+    }
+
+    .imaging_catalog{
+        width: 42vw;
+        height: 49vw;
+    }
+    
+
+    .imaging_item{
+        height: 49vw;
+        width: 42vw;
+    } 
+
+
+    .information{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        padding-left: 25vw;
+        padding-right: 25vw;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+    
+    .information_item{
+        width: 50vw;
+    }
+    
+    .registration{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 5vh;
+        justify-items: center;
+        justify-content: center;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    
+    .registration:before{
+        width: 180vw;
+    }
+    
+    .passage{
+        width: 45vw;
+    }
+    
+    .form_registration{
+        width: 100vw;
+        justify-content: flex-start;
+    }
+
+    
+    .massengers_logo{
+        padding: 3px;
+        width: 20px;
+        height: 20px;
+    }
+    
+}
+
+@media(max-width: 599px) and
+(min-width: 320px){
+
+    .header_nav{
+        max-height: 20px;
+    }
+    
+    .header_menu{
+        display: none;
+    }
+    
+    .menu{
+        width: 135px;
+        padding: 4vw;
+        right: -135px;
+    }
+
+    .menu_box {
+        gap: 0;
+        margin-top: 4vw;
+      }
+
+    .menu_heading {
+        font-size: 10px;
+        line-height: 5px;
+      }
+    
+      .menu_title {
+        font-size: 10px;
+        line-height: 5px;
+      }
+    
+      .menu_list {
+        gap: 0;
+        padding-bottom: 2vw;
+      }
+      
+      
+      .menu_link {
+        font-size: 10px;
+        line-height: 5px;
+      }
+
+   
+    .top_imaging{
+        display: none;
+    }
+    
+    .top_content{
+        width: 100vw;
+        min-height: 363px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    h1{
+        font-size: 38px;
+    }
+    
+    .text_content{
+        font-size: 20px;
+    }
+    
+    .cards{
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+        width: 90vw;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5vw;
+    }
+    
+    
+    .women{
+        height: 65vw;
+        width: 90vw;
+        grid-area: 1/1/2/4;
+    }
+    
+    .man{
+        height: 65vw;
+        width: 90vw;
+        grid-area: 2/1/3/4;
+    }
+    
+    .kids{
+        height: 65vw;
+        width: 90vw;
+        grid-area: 3/1/4/4;
+    }
+    
+    .accesories{
+        width: 90vw;
+        height: 29vw;
+        grid-area: 4/1/5/4;
+    }
+    
+    .catalog{
+        width: 90vw;
+        gap: 15vw;
+    }
+
+    .catalog_description{
+        text-align: center;
+    }
+    
+    .catalog_items{
+        grid-template: repeat(6, 1fr)/repeat(1, 1fr);
+    }  
+
+    .item{
+        width: 90vw;
+    }
+
+    .imaging_catalog{
+        width: 90vw;
+        height: 99vw;
+    }
+    
+
+    .imaging_item{
+        height: 99vw;
+        width: 90vw;
+    } 
+
+
+    .information{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+    }
+    
+    .information_item{
+        width: 80vw;
+    }
+
+    .registration{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 5vh;
+        justify-items: center;
+        justify-content: center;
+    }
+    
+    .registration:before{
+        width: 180vw;
+    }
+    
+    .passage{
+        width: 85vw;
+    }
+    
+    .form_info{
+        font-size: 14px;
+    }
+
+    .form_registration{
+        width: 90vw;
+        justify-content: flex-start;
+    }
+
+
+    .registration_button{
+        width: 20vw;
+    }
+    
+    .registration_input{
+        width: 60vw;
+    }
+    
+
+    footer{
+        height: 143px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 3vh;
+    }
+    
+    .text_brand_date{
+        width: 100vw;
+        padding-left: 0vw;
+        text-align: center;
+    }
+    
+    .massenger_brand_date{
+        width: 100vw;
+        gap: 1vw;
+        padding-right: 0;
+        justify-content: center;
+    }
+
+      
+    .massengers_logo{
+        padding: 3px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media(min-width: 2000px){
+
+    .header{
+        min-height: 105px;
+        gap: 80vw;
+    }
+    .menu{
+        top: 105px;
+    }
+    
+.menu_heading {
+    font-size: 20px;
+  }
+ 
+  .menu_title {
+    font-size: 20px;
+  }
+  
+  .menu_link {
+    font-size: 20px;
+  }
+     
+h1{
+    font-size: 90px;
+}
+
+.text_content{
+    font-size: 60px;
+}
+
+h4{
+    font-size: 22px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+p{
+    font-size: 20px;
+}
+
+h5{
+    font-size: 19px;
+}
+
+.item_add{
+    font-size: 20px;
+}
+
+.price{
+    font-size: 22px;
+}
+
+.button_items{
+    font-size: 22px;
+}
+
+h6{
+    font-size: 28px;
+}
+
+.information_text{
+    font-size: 20px;
+}
+
+.passage_text{
+    font-size: 28px;
+}
+
+.title_registration{
+    font-size: 30px;
+ }
+
+.form_info{
+    font-size: 36px;
+}
+
+form{
+    font-size: 20px;
+}
+
+.text_brand_date{
+    font-size: 22px;
+}
+}
